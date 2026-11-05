@@ -68,16 +68,15 @@
          outside the app, and both are named because either reader may be the one holding it. -->
     <string name="dialog_adb_pairing_accessibility_permission">يحظر Android تفعيل هذا الخيار للتطبيقات المثبتة من خارج متجر التطبيقات. اسمح بإذن ^1 لتفعيل خدمة تسهيل الاستخدام. ستظهر هذه الخدمة في قائمة تسهيل الاستخدام بالحالة \"يخضع لقيود الإعدادات\".\n\nافتح معلومات التطبيق واختر \"السماح بالإعدادات المقيّدة\" من القائمة، أو نفّذ هذا الأمر على جهاز كمبيوتر:\\n\\n^2\n\nكلا الخيارين يعمل. سيعمل المفتاح بعد ذلك.</string>
     <string name="dialog_adb_pairing_open_app_info"></string>
-    <string name="dialog_adb_pairing_accessibility_enable"></string>
+    <string name="dialog_adb_pairing_accessibility_enable">يقرأ الإقران التلقائي الرمز من نافذة النظام عبر خدمة إمكانية الوصول الخاصة بـ Shizuku، لذا يجب تفعيلها، وستعمل فقط للفترة المطلوبة: تقوم الخدمة بإيقاف نفسها تلقائياً بمجرد العثور على الرمز، أو بعد دقيقة واحدة لتوفير الطاقة. يقوم Shizuku عادةً بتفعيلها بنفسه، وهذا يتطلب صلاحية WRITE_SECURE_SETTINGS، والتي لم يتم منحها بعد I في حال كان التثبيت جديداً.\n\nقم بتفعيلها في الشاشة التالية، أو اكتب الرمز بنفسك ضمن خيار \"يدوي\"، أو امنح الصلاحية لمرة واحدة:\n\nadb shell pm grant %1$s android.permission.WRITE_SECURE_SETTINGS</string>
     <string name="dialog_adb_pairing_accessibility_navigate">يرجى بدء عملية الاقتران من خلال تنفيذ
 الخطوات التالية:\n- انتقل إلى \"خيارات المطور\"\n- قم بتمكين \"تصحيح أخطاء USB\" و\"تصحيح الأخطاء اللاسلكية\"\n- انقر على الجانب الأيسر من \"تصحيح الأخطاء اللاسلكية\"\n- انقر على\"إقران الجهاز برمز الاقتران\". سيكتشف Shizuku رمز الاقتران تلقائيًا.</string>
-    <string name="adb_pairing_requires_multi_window">الرجاء إدخال وضع تقسيم الشاشة متعدد النوافذ أولاً.</string>
-    <string name="adb_pairing_requires_multi_window_reason">يتطلب النظام أن يكون مربع حوار الاقتران
-مرئيًا دائمًا. استخدام وضع تقسيم الشاشة هو الطريقة الوحيدة لإظهار هذا التطبيق ومربع حوار النظام في آنٍ واحد.</string>
-    <string name="adb_error_key_store">غير قادر على إنشاء مفتاح لتصحيح الأخطاء اللاسلكية.\nقد يكون هذا بسبب تعطل آلية KeyStore لهذا الجهاز.</string>
-    <string name="adb_error_stop_tcp">فشل في إيقاف ADB عبر TCP</string>
-    <string name="adb_pair_required">يرجى المرور بخطوة الاقتران أولاً.</string>
-    <string name="enable">يُمكَِن</string>
+    <string name="adb_pairing_requires_multi_window">أولًا، أفتح وضع تقسيم الشاشة.</string>
+    <string name="adb_pairing_requires_multi_window_reason">يتطلب النظام أن تظل نافذة الإقران مرئية دائماً. استخدام وضع تقسيم الشاشة هو الطريقة الوحيدة لإظهار هذا التطبيق ونافذة النظام في نفس الوقت.</string>
+    <string name="adb_error_key_store">غير قادر على إنشاء مفتاح \"تصحيح الأخطاء اللاسلكية\". \nقد يكون هذا بسبب تعطل آلية KeyStore لهذا الجهاز.</string>
+    <string name="adb_error_stop_tcp">فشل إيقاف ADB عبر TCP</string>
+    <string name="adb_pair_required">يرجى إقران الجهاز أولاً.</string>
+    <string name="enable">تفعيل</string>
     <string name="auto_pair_instructions">الاقتران دون كتابة رمز:\\n\\n1. خيارات المطوّر ← تصحيح الأخطاء اللاسلكي\\n2. إقران الجهاز باستخدام رمز الاقتران\\n\\nيقرأ Shizuku الرمز والمنفذ مباشرةً من مربع الحوار ويبدأ تشغيل نفسه. اترك مربع الحوار مفتوحًا حتى يكتمل الاقتران.
 </string>
     <string name="auto_pair_manual">يدوي
@@ -687,6 +686,12 @@ intent:#Intent;action=android.intent.action.VIEW;data=https://example.com;end
     <string name="settings_black_night_theme_summary">استخدام خلفية سوداء بالكامل في الوضع الداكن
 </string>
     <string name="permissions_action_settings">الاعدادات</string>
+    <!--
+      The guided first run. Each page is one decision, and the sentences say what happens rather
+      than what the app is worth: the app is Shizuku-Next, the service it manages is Shizuku.
+    -->
+    <string name="setup_action_continue">متابعة</string>
+    <string name="setup_wireless_title">تصحيح الأخطاء عن طريق الشبكه اللاسلكية</string>
     <string name="settings_help">مساعده</string>
     <string name="settings_report_bug">الإبلاغ عن خطأ</string>
     <!--
@@ -848,6 +853,9 @@ intent:#Intent;action=android.intent.action.VIEW;data=https://example.com;end
     <string name="app_info_yes">نعم</string>
     <string name="app_info_no">لا</string>
     <string name="tab_wifi_passwords">كلمات مرور الواي فاي</string>
+    <string name="accessibility_boot">التشغيل تلقائيًا عند بدء تشغيل الجهاز
+</string>
+    <string name="accessibility_notification_channel">خدمات إمكانية الوصول</string>
     <string name="wifi_passwords_show">إظهار كلمة المرور</string>
     <string name="wifi_passwords_hide">إخفاء كلمة المرور</string>
     <string name="wifi_passwords_copy">نسخ كلمة المرور</string>

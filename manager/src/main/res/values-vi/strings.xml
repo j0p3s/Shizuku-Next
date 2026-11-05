@@ -212,6 +212,11 @@
     <string name="permissions_nearby_summary">Tìm cổng gỡ lỗi không dây trong mạng của bạn.</string>
     <string name="permissions_write_secure_settings_summary">Cho phép Shizuku bật tính năng gỡ lỗi không dây. Chỉ ADB mới có thể cấp quyền này.</string>
     <string name="permissions_battery_summary">Ngăn Android tự động tắt Shizuku khi chạy ngầm.</string>
+    <!--
+      The guided first run. Each page is one decision, and the sentences say what happens rather
+      than what the app is worth: the app is Shizuku-Next, the service it manages is Shizuku.
+    -->
+    <string name="setup_wireless_title">Mở gỡ lỗi không dây</string>
     <string name="settings_help">Giúp đỡ</string>
     <string name="settings_translate">Tham gia dịch thuật</string>
     <string name="settings_translate_note">Dịch ứng dụng trên Crowdin.</string>
@@ -371,6 +376,7 @@
     <string name="home_switch_wireless">Mở gỡ lỗi không dây</string>
     <!-- Said after a switch outside the app is tapped, since a tile or a widget gives no other
          answer: the state is on the control, but the control is not where the finger is. -->
+    <string name="accessibility_boot">Bắt đầu khi khởi động</string>
     <string name="install_dexopt_default">Mặc định của nền tảng</string>
     <string name="install_location_auto">Tùy chọn nhà phát triển</string>
 </resources>

@@ -600,6 +600,13 @@
     <string name="permissions_accessibility">Služba přístupnosti</string>
     <string name="permissions_accessibility_summary">Automaticky čte párovací kód.</string>
     <string name="permissions_battery_summary">Zastaví Android od zabíjení Šizuku na pozadí.</string>
+    <!--
+      The guided first run. Each page is one decision, and the sentences say what happens rather
+      than what the app is worth: the app is Shizuku-Next, the service it manages is Shizuku.
+    -->
+    <string name="setup_action_continue">Pokračovat</string>
+    <string name="setup_root_title">Root</string>
+    <string name="setup_wireless_title">Bezdrátové ladění</string>
     <string name="settings_help">Pomoc</string>
     <string name="settings_report_bug">Nahlásit chybu</string>
     <!--
@@ -937,6 +944,10 @@
     <string name="app_info_launcher">Položka spouštěče</string>
     <string name="app_info_yes">Ano</string>
     <string name="app_info_no">Ne</string>
+    <string name="accessibility_boot">Začněte na botě</string>
+    <string name="accessibility_filter_off">Vypnuto</string>
+    <string name="accessibility_filter_on">Zapnuto</string>
+    <string name="accessibility_notification_channel">Služby v oblasti usnadnění přístupu</string>
     <string name="wifi_passwords_connect">Připojit</string>
     <string name="files_root_app_data">Údaje</string>
     <string name="files_root_system">Systém</string>

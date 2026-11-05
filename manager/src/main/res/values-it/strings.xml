@@ -425,6 +425,8 @@
     <string name="status_value_none">-</string>
     <string name="status_running_short">In esecuzione</string>
     <string name="status_stopped_short">Arrestato</string>
+    <string name="home_status_service_active">Il servizio Shizuku è attivo</string>
+    <string name="home_status_service_stopped">Il servizio Shizuku non è in esecuzione</string>
     <string name="action_start">Avvia</string>
     <string name="tools_stealth">Modalità invisibile</string>
     <string name="tools_modules">Moduli</string>
@@ -556,9 +558,13 @@
     <string name="start_system_custom_copied">Comando copiato negli appunti.</string>
     <string name="start_system_custom_copy_failed">Il comando è sopra, pronto da copiare a mano.</string>
     <string name="settings_section_startup">Avvio</string>
+    <string name="settings_section_startup_summary">Avvio, watchdog e metodo di avvio</string>
     <string name="settings_section_wireless">Debug wireless</string>
+    <string name="settings_section_wireless_summary">Debug wireless, modalità TCP e porta ADB</string>
     <string name="settings_section_tools">Strumenti</string>
+    <string name="settings_section_tools_summary">Autorizzazioni, configurazione, terminale e intent</string>
     <string name="settings_section_appearance">Aspetto</string>
+    <string name="settings_section_appearance_summary">Tema, colori e lingua</string>
     <string name="settings_section_about">Informazioni</string>
     <string name="settings_theme">Tema</string>
     <string name="settings_theme_system">Segui il sistema</string>
@@ -709,6 +715,22 @@
     <string name="permissions_accessibility">Servizio di accessibilità</string>
     <string name="permissions_accessibility_summary">Legge automaticamente il codice di accoppiamento.</string>
     <string name="permissions_battery_summary">Impedisce ad Android di chiudere Shizuku in background.</string>
+    <string name="permissions_pairing_service">Servizio di accoppiamento</string>
+    <string name="permissions_pairing_service_reason">Legge il codice di accoppiamento.</string>
+    <string name="permissions_pairing_service_restricted">Consenti le impostazioni limitate nelle informazioni dell\'app.</string>
+    <!--
+      The guided first run. Each page is one decision, and the sentences say what happens rather
+      than what the app is worth: the app is Shizuku-Next, the service it manages is Shizuku.
+    -->
+    <string name="setup_step">Passo %1$d di %2$d</string>
+    <string name="setup_action_skip">Salta</string>
+    <string name="setup_action_continue">Continua</string>
+    <string name="setup_action_done">Fatto</string>
+    <string name="setup_welcome_title">Benvenuto su Shizuku-Next</string>
+    <string name="setup_welcome_body">Shizuku-Next avvia e gestisce il servizio Shizuku, che consente alle applicazioni di utilizzare i permessi che normalmente necessitano di adb o root. Può essere modificato tutto in seguito nelle Impostazioni.</string>
+    <string name="setup_start_title">Come dovrebbe avviarsi Shizuku?</string>
+    <string name="setup_root_title">Root</string>
+    <string name="setup_wireless_title">Debug wireless</string>
     <string name="settings_help">Aiuto</string>
     <string name="settings_translate">Partecipa alla traduzione</string>
     <string name="settings_translate_note">Traduci l\'app su Crowdin.</string>
@@ -1085,6 +1107,10 @@
     <string name="app_info_yes">Sì</string>
     <string name="app_info_no">No</string>
     <string name="tab_wifi_passwords">Password Wi-Fi</string>
+    <string name="accessibility_boot">Avvia all\'accensione</string>
+    <string name="accessibility_filter_off">Disattivo</string>
+    <string name="accessibility_filter_on">Attivo</string>
+    <string name="accessibility_notification_channel">Servizi di accessibilità</string>
     <string name="wifi_passwords_show">Mostra password</string>
     <string name="wifi_passwords_hide">Nascondi password</string>
     <string name="wifi_passwords_copy">Copia password</string>
